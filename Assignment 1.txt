@@ -1,0 +1,10 @@
+What is difference between DVM and JVM?
+
+DVM is Register based which is designed to run on low memory, uses its own byte code and runs .Dex file
+
+JVM is Stack based which uses java byte code and runs .class file having JIT.
+
+Java source code is compiled by the Java compiler into .class files. Then the dx (dexer) tool, part of the Android SDK processes the .class files into a file format called DEX that contains Dalvik bytecode. The dx tool eliminate all the redundant information that is present in the classes. In DEX all the classes of the application are packed into one file. DVM has been designed so that a device can run multiple instances of the VM efficiently.
+
+stack-based machines must use instructions to load data on the stack and manipulate that data, and, thus, require more instructions than register machines to implement the same high level code, but the instructions in a register machine must encode the source and destination registers and, therefore, tend to be larger.
+
